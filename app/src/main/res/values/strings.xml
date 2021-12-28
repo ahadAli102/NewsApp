@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_content">
+        The integrity of the award has been called into question in recent years and it is not
+        hard to see why the Ballon d’Or doesn’t matter as much. Lionel Messi is the current holder
+        of the Ballon d’Or, reclaiming his crown from Luka Modric, who surprisingly won the award
+        following Real Madrid and Croatia’s success in 2018. The integrity of the award – alongside
+        many other individual accolades – has been called into question in recent years. Frankly, the
+        Ballon d’Or really doesn’t matter anymore. The Ballon d’Or is the most prestigious individual
+        accolade in world football, awarded to the male player deemed to have performed to the
+        highest standard over the previous year. It used to be only journalists who had a say, but
+        from 2007, coaches and national-team captains have been able to vote for their friends and
+        teammates; oh, sorry, the players they think have been the most impressive. And there is your
+        first problem. The voting system is ever so slightly crooked, but does allow for some excellent
+        entertainment once the voting records are released. Players’ votes are as f**ked as the journalists’.
+        In 2019, Passang Norbu – a freelance journalist from Bhutan – had a top five consisting of all
+        Liverpool players and after his Facebook account was discovered, the liver bird on his profile
+        picture indicated why. The Argentine journalist is obviously voting for Messi while sneaking someone
+        like Sergio Aguero in there, and their Portuguese counterpart is clearly going to vote for Cristiano
+        Ronaldo , with Bernardo Silva creeping into the top five. Messi has only voted for Ronaldo twice and
+        the Portuguese has never voted for his arch-nemesis, which is nothing more than, let’s say, tactical.
+        The Eurovision Song Contest vibe in the voting is nothing new, and at this stage is just funny.
+        The #BallonDor2019 voting records. Here’s what really matters guys. Have fun.
+        pic.twitter.com/r8d5U7nXYn — Sport Witness (@Sport_Witness) December 3, 2019 The 2020 award was cancelled thanks to
+        Covid-19. The Champions League, Europa League and each of the top five major leagues (except Ligue 1) was
+        concluded despite the pandemic, but the award for the best men’s player could not be given.
+        How frustrating for Bayern Munich striker Robert Lewandowski, who was a shoo-in. The lack of ceremony
+        makes sense as stadiums were empty for matches, but this does not mean the whole shebang should have
+        been cancelled. The Pole was robbed. And it’s not the first time. The 2018 Ballon d’Or was given to
+        Luka Modric after the Croatian midfielder won the Champions League with Real Madrid and reached the final
+        of the 2018 World Cup in Russia, losing 4-2 to France. Messi finished fifth in the voting, while Ronaldo
+        came second behind his club teammate. Stats are not everything, but Modric scored two and assisted eight
+        in 43 matches for Madrid, while Ronaldo scored 44 in 44 and matched the Croatian’s assist tally. Messi
+        contributed to 65 goals in 54 matches and came fifth . France duo Kylian Mbappe and Antoine Griezmann
+        completed the top five. The decision to give Modric the award was controversial and definitely damaged
+        its reputation among football fans. Modric had a fantastic year and without their captain, Croatia probably
+        would not have reached the World Cup final. But it is important to recognise that the Ballon d’Or is an individual
+        award, not a team one. Modric was not Real Madrid’s best player that year; Ronaldo was. Unfortunately for the now
+        Manchester United striker, Portugal’s poor World Cup let him down. Despite a measly hat-trick against Spain and a
+        winning goal against Morocco, it seems that the tournament in Russia was a deciding factor. It is the biggest
+        competition in the sport, but it is just seven matches. Seven matches of the 60-plus played over a calendar year
+        by most elite footballers. To be fair, the Croatian was the first man not named Lionel or Cristiano to win the
+        award since Kaka in 2007, so it could have just been a strong case of voter fatigue. One of the few things in the
+        Ballon d’Or’s favour is that it is not the Globe Soccer Awards. These awards acknowledge the people who work behind
+        the scenes – agents and such, as well as players and coaches. Or in other words, super-agent Jorge Mendes as
+        well as players and coaches. The whole thing was founded by Jorge Mendes – Globe Soccer’s agent of the century –
+        before being taken over by Silva International, who own most of Mendes’ business. He was won 10 out of 11 agent
+        of the year awards, while his clients win pretty much everything else. Ronaldo has won six out of ten best player
+        of the year awards and the revelation of the year award was created in 2014 for Mendes’ client James Rodriguez,
+        before vanishing until 2019, when it magically resurfaced for another one of his clients in Joao Felix. Ceremonies
+        such as the Globe Soccer Awards simply need to be ignored completely, but they do highlight a very sorry state of
+        affairs when it comes to individual honours in the sport. The Ballon d’Or voting is leaked every single year,
+        and if you believe what you read, Messi will claim his seventh on Monday in Paris. If so, Robert Lewandowski
+        has been hard done by once again after another incredible year with Bayern Munich. And if you think Modric’s
+        win was bad, Jorginho is one of this year’s favourites after winning the Champions League and European
+        Championship, despite not being the best player for either Chelsea or Italy. The Ballon d’Or is an individual
+        award that surely should be given to the best player in the world for that year, not somebody like Modric, who
+        would not have been nominated had Real Madrid lost the Champions League final and Croatia not reached the World
+        Cup final. He was sitting in the intersection of a Venn diagram of football success but that does not make him
+        the sport’s outstanding performer of the previous 12 months. Individual awards like the Premier League Golden
+        Glove or Golden Boot are acceptable as they literally do exactly what they say on the tin. These simplistic
+        awards will never lose credibility and will show future generations the brilliance of an individual player;
+        Harry Kane could retire with zero trophies and zero Ballon d’Or podium appearances, but his Golden Boot
+        tally should see him held in high regard for decades.
+        But the Ballon d’Or feels a little farcical, like a Eurovision without the knowing wink.
+    </string>
+    <string name="news_url"><![CDATA[https://newsdata.io/api/1/news?apikey=pub_2320f0868f525d0141226a957169cc43ec65&category=sports,health&q=messi&country=gb&page=1]]></string>
+</resources>

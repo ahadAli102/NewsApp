@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activity.NewsActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:fontFamily="@font/helvetica_bold"
+          android:text="Brazil become world champion for the 6 time"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:id="@+id/newsTitleId"
+          android:layout_margin="10dp"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:id="@+id/newsImageId"
+          android:src="@drawable/ic_launcher_background"
+          android:layout_marginBottom="10dp"
+          />
+
+      <TextView
+          android:layout_marginStart="10dp"
+          android:fontFamily="@font/helvetica"
+          android:textSize="15sp"
+          android:id="@+id/newsPublisherId"
+          android:text="Source: CNN"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"/>
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:fontFamily="@font/helvetica"
+          android:textSize="15sp"
+          android:textColor="@color/black"
+          android:id="@+id/newsJournalistId"
+          android:text="Publisher: Tom holland, Harry Maguire"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:layout_marginStart="10dp"
+          android:fontFamily="@font/helvetica"
+          android:textSize="15sp"
+          android:id="@+id/newsDateId"
+          android:text="Published at 6:30 pm 21th december"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"/>
+
+      <TextView
+          android:id="@+id/newsDetailsId"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:fontFamily="@font/helvetica"
+          android:text="@string/news_content"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
