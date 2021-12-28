@@ -68,17 +68,18 @@ public class FavoriteFragment extends Fragment {
 
         mLocalNewsObserver = newsEntities -> {
             Log.d(TAG, "onChanged: response size from db : "+newsEntities.size());
-            mSavedNews.clear();
-            mSavedNews.addAll(newsEntities);
-            if(mAdapter == null){
+            if(mAdapter == null || mSavedNews == null){
                 initAdapterProperty();
             }
             if(mSavedNews.size()>0){
                 mSavedNews.clear();
             }
             mSavedNews.addAll(newsEntities);
+            Log.d(TAG, "setLoadData: saved data adapter size : " + mSavedNews.size());
             mAdapter.setNews(mSavedNews);
             mAdapter.notifyDataSetChanged();
+            mRecycler.setAdapter(mAdapter);
+            Log.d(TAG, "setNewsListObserver: mSaved News size : "+mSavedNews.size());
         };
         if(mViewModel == null){
             initViewModel();
@@ -104,9 +105,10 @@ public class FavoriteFragment extends Fragment {
         initAdapterProperty();
     }
     private void initAdapterProperty(){
+        Log.d(TAG, "initAdapterProperty: ");
         mSavedNews = new ArrayList<>();
-        mAdapter = new FavoriteNewsAdapter();
-        mAdapter.setNews(mSavedNews);
+        mAdapter = new FavoriteNewsAdapter(mSavedNews);
+        //mAdapter.setNews(mSavedNews);
         mAdapter.setContext(requireContext());
         mAdapter.setFragment(this);
         mAdapter.setClickInterface(new FavoriteNewsAdapter.FavoriteNewsAdapterClickInterface() {

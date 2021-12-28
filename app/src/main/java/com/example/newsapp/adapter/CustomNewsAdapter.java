@@ -34,7 +34,7 @@ import java.util.List;
 import pl.droidsonroids.gif.GifImageView;
 
 public class CustomNewsAdapter extends RecyclerView.Adapter<CustomNewsAdapter.CustomNewsHolder>{
-    private static final String TAG = "TAG:Adapter";
+    private static final String TAG = "MyTAG:Adapter";
     private List<CustomNews> mNews;
     private List<CustomNews> mMainNews;
     private Context mContext;
@@ -168,7 +168,8 @@ public class CustomNewsAdapter extends RecyclerView.Adapter<CustomNewsAdapter.Cu
         if(position == (mMainNews.size()-1)){
             if(mNews.get(position).getNextPage()!=null){
                 Log.d(TAG, "onBindViewHolder: "+mNews.get(position).getNextPage());
-                mFragment.run(mFragment.QUERY+"&page="+mNews.get(position).getNextPage());
+                mFragment.run(mFragment.mFilterMap.get(HomeFragment.FILTER_MAIN_QUERY_KEY)+"&page="+mNews.get(position).getNextPage());
+                Log.d(TAG, "onBindViewHolder: hit query : "+mFragment.mFilterMap.get(HomeFragment.FILTER_MAIN_QUERY_KEY)+"&page="+mNews.get(position).getNextPage());
             }
         }
     }

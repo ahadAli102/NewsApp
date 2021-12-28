@@ -34,7 +34,7 @@ import java.util.List;
 import pl.droidsonroids.gif.GifImageView;
 
 public class FavoriteNewsAdapter extends RecyclerView.Adapter<FavoriteNewsAdapter.FavoriteNewsHolder>{
-    private static final String TAG = "TAG:Adapter";
+    private static final String TAG = "MyTAG:FavAdapter";
     private List<NewsEntity> mNews;
     private List<NewsEntity> mMainNews;
     private Context mContext;
@@ -43,6 +43,13 @@ public class FavoriteNewsAdapter extends RecyclerView.Adapter<FavoriteNewsAdapte
 
     public static int SCROLL_POSITION;
 
+
+
+    public FavoriteNewsAdapter(List<NewsEntity> mNews) {
+        this.mNews = mNews;
+        mMainNews = new ArrayList<>(mNews);
+        Log.d(TAG, "setNews: "+mNews.size());
+    }
     public void setNews(List<NewsEntity> mNews) {
         this.mNews = mNews;
         mMainNews = new ArrayList<>(mNews);

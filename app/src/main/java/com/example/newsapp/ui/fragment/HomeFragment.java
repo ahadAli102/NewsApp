@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment implements CustomNewsAdapter.CustomNe
 
     public static boolean QUERY_RUN = false;
     public static boolean FIRST_RUN = true;
-    private Map<String, String> mFilterMap;
+    public static Map<String, String> mFilterMap;
     public static Map<String, Boolean> mSavedMap;
 
     private static List<CustomNews> mNewsList;
@@ -231,18 +231,7 @@ public class HomeFragment extends Fragment implements CustomNewsAdapter.CustomNe
         mLoadingGif = mView.findViewById(R.id.homeLoadingGif);
         mLoadingGif.setVisibility(View.GONE);
         mSearchView.setOnClickListener(v -> mSearchView.setIconified(false));
-        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                mAdapter.getFilter().filter(newText);
-                return false;
-            }
-        });
 
         mFilterImageView.setOnClickListener(v -> {
             mFilterImageView.setColorFilter(0x686B68, PorterDuff.Mode.DARKEN);
@@ -262,6 +251,19 @@ public class HomeFragment extends Fragment implements CustomNewsAdapter.CustomNe
         mAdapter.setClickInterface(this);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         mRecyclerView.setAdapter(mAdapter);
+
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                mAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
 
     }
 
