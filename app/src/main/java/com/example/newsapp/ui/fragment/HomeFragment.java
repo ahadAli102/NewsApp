@@ -304,7 +304,7 @@ public class HomeFragment extends Fragment implements CustomNewsAdapter.CustomNe
         final TextView submitText = customLayout.findViewById(R.id.filterSubmitTextId);
         final TextView cancelText = customLayout.findViewById(R.id.filterCancelTextId);
         EditText queryEditText = customLayout.findViewById(R.id.filterKeywordEditTextId);
-
+        mFilterMap = getStoredFilterPattern();
         FilterCategoryAdapter categoryAdapter = new FilterCategoryAdapter(requireContext(), mFilterMap.get(FILTER_CATEGORIES_KEY));
         FilterCountryAdapter countryAdapter = new FilterCountryAdapter(requireContext(), mFilterMap.get(FILTER_COUNTRIES_KEY));
         FilterLanguageAdapter languageAdapter = new FilterLanguageAdapter(requireContext(), mFilterMap.get(FILTER_LANGUAGES_KEY));

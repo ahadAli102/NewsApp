@@ -77,8 +77,10 @@ public class FavoriteNewsAdapter extends RecyclerView.Adapter<FavoriteNewsAdapte
         news.setTitle(mNews.get(position).getTitle());
         news.setLink(mNews.get(position).getLink());
         news.setContent(mNews.get(position).getContent());
+        news.setDescription(mNews.get(position).getDescription());
+        news.setSourceId(mNews.get(position).getSourceId());
         news.setPubDate(mNews.get(position).getPubDate());
-        news.setContent(mNews.get(position).getCreator());
+        news.setCreator(mNews.get(position).getCreator());
         return news;
     }
 

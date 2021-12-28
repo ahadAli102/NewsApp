@@ -62,11 +62,16 @@ public class NewsActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: Published at "+DateTimeConverter.convert(news.getPubDate(),1));
         Log.d(TAG, "onCreate: Publisher at "+news.getCreator());
         Log.d(TAG, "onCreate: Content: "+news.getContent());
-        if(news.getCreator().trim().isEmpty() || (news.getCreator().trim().equals(""))){
-            mJournalistText.setVisibility(View.GONE);
+        try{
+            if(news.getCreator().trim().isEmpty() || (news.getCreator().trim().equals(""))){
+                mJournalistText.setVisibility(View.GONE);
+            }
+            else{
+                mJournalistText.setText("Publisher: "+news.getCreator());
+            }
         }
-        else{
-            mJournalistText.setText("Publisher: "+news.getCreator());
+        catch (Exception e){
+            mJournalistText.setVisibility(View.GONE);
         }
         try {
             Bitmap image = news.getImage();
